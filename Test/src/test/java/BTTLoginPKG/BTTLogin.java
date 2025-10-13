@@ -38,7 +38,6 @@ public class BTTLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.get("https://portal.bluetriangletech.com/btportal/web/index.php?r=overview-dashboard/overview");
         driver.manage().window().maximize();
-
         driver.findElement(By.id("loginform-username")).sendKeys(email);
         driver.findElement(By.id("loginform-password")).sendKeys(pwd);
         driver.findElement(By.xpath("//button[@name='login-button']")).click();
