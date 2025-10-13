@@ -32,16 +32,13 @@ public class BTTLogin {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
-    @Test //(dataProvider = "dp")
+    @Test (dataProvider = "dp")
     void testlogin(String email, String pwd) throws InterruptedException
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get("https://portal.bluetriangletech.com/btportal/web/index.php?r=overview-dashboard/overview");
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//div[@class='switch']")).click();
 
-
-        /*
         driver.findElement(By.id("loginform-username")).sendKeys(email);
         driver.findElement(By.id("loginform-password")).sendKeys(pwd);
         driver.findElement(By.xpath("//button[@name='login-button']")).click();
@@ -53,7 +50,7 @@ public class BTTLogin {
         Logoutoption.click();
         Thread.sleep(5000);
         elementlink = driver.findElement(By.xpath("//a[text()=\"Don't have an account?\"]"));
-        Assert.assertTrue(elementlink.isDisplayed(), "Element is not displayed!"); */
+        Assert.assertTrue(elementlink.isDisplayed(), "Element is not displayed!");
     }
   /*  @AfterClass
     void tearDown()
@@ -61,7 +58,7 @@ public class BTTLogin {
             driver.close();
         } */
 
-  /* @DataProvider (name = "dp")
+  @DataProvider (name = "dp")
    Object [][] logindata ()
         {
             Object data[][] =
@@ -70,7 +67,7 @@ public class BTTLogin {
                             {"aloha_kamal", "0A4n74euSEE!7b&3"},
                     };
             return data;
-        }*/
+        }
 
     }
 
