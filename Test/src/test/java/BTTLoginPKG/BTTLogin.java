@@ -25,8 +25,8 @@ public class BTTLogin {
         {
             case "chrome" : driver = new ChromeDriver(); break;
             //case "firefox" : driver = new FirefoxDriver(); break;
-          //  case "edge" : driver = new EdgeDriver(); break;
-         // default : System.out.println("Invalid browser"); return;
+            //  case "edge" : driver = new EdgeDriver(); break;
+           // default : System.out.println("Invalid browser"); return;
 
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
