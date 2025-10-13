@@ -44,6 +44,7 @@ public class BTTLogin {
         driver.findElement(By.xpath("//button[@name='login-button']")).click();
         Close_btn = wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("//div[@class='modal-header flex']//*[name()='svg']"))));
         Close_btn.click();
+        Thread.sleep(3000);
         Usericon = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toggle-user")));
         Usericon.click();
         Logoutoption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Logout']")));
