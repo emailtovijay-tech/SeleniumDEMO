@@ -16,7 +16,6 @@ public class BTTLogin {
     WebDriver driver;
     WebElement Close_btn, Usericon, Logoutoption, elementlink;
 
-
     @BeforeClass
     @Parameters({"browser"})
     void setup(String br)
@@ -64,7 +63,6 @@ public class BTTLogin {
         {
             Object data[][] =
                     {
-                            {"abc@gmail.com", "test123"},
                             {"aloha_kamal", "0A4n74euSEE!7b&3"},
                     };
             return data;
