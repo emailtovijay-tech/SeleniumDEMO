@@ -46,7 +46,7 @@ public class BTTLogin {
         Close_btn.click();
         Usericon = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toggle-user")));
         Usericon.click();
-        Logoutoption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Logout']")));
+        Logoutoption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Logout']")));
         Logoutoption.click();
         Thread.sleep(5000);
         elementlink = driver.findElement(By.xpath("//a[text()=\"Don't have an account?\"]"));
