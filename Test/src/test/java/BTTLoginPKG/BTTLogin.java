@@ -52,6 +52,7 @@ public class BTTLogin {
         elementlink = driver.findElement(By.xpath("//a[text()=\"Don't have an account?\"]"));
         Assert.assertTrue(elementlink.isDisplayed(), "Element is not displayed!");
     }
+
     @AfterClass
     void tearDown()
         {
