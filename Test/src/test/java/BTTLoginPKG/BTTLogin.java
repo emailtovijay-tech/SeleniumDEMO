@@ -29,7 +29,7 @@ public class BTTLogin {
          // default : System.out.println("Invalid browser"); return;
 
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @Test (dataProvider = "dp")
@@ -52,11 +52,11 @@ public class BTTLogin {
         elementlink = driver.findElement(By.xpath("//a[text()=\"Don't have an account?\"]"));
         Assert.assertTrue(elementlink.isDisplayed(), "Element is not displayed!");
     }
-  /*  @AfterClass
+    @AfterClass
     void tearDown()
         {
             driver.close();
-        } */
+        }
 
   @DataProvider (name = "dp")
    Object [][] logindata ()
