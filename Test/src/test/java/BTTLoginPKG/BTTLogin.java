@@ -26,7 +26,7 @@ public class BTTLogin {
             case "chrome" : driver = new ChromeDriver(); break;
             //case "firefox" : driver = new FirefoxDriver(); break;
             //  case "edge" : driver = new EdgeDriver(); break;
-           // default : System.out.println("Invalid browser"); return;
+            // default : System.out.println("Invalid browser"); return;
 
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -41,6 +41,7 @@ public class BTTLogin {
         driver.findElement(By.id("loginform-username")).sendKeys(email);
         driver.findElement(By.id("loginform-password")).sendKeys(pwd);
         driver.findElement(By.xpath("//button[@name='login-button']")).click();
+        Thread.sleep(2000);
         Close_btn = wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("//div[@class='modal-header flex']//*[name()='svg']"))));
         Close_btn.click();
         Thread.sleep(3000);
