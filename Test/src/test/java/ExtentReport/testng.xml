@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="ExtentReport Suite">
+    <listeners>
+        <listener class-name="ExtentReport.ExtentReportListener"/>
+    </listeners>
+    <test name="ExtentReport Tests">
+        <classes>
+            <class name="ExtentReport.ReportTC"/>
+        </classes>
+    </test>
+</suite>

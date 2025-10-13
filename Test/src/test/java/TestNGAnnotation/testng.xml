@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MyTest Suit">
+    <test verbose="2" preserve-order="true" name="C:/Users/user/IdeaProjects/Test/src/test/java/TestNGAnnotation.Annotation.java">
+    <classes>
+        <class name="TestNGAnnotation.Annotation"/>
+        <class name="TestNGAnnotation.Annotation_2"/>
+        <class name="TestNGAnnotation.Annotation_3"/>
+        <class name="TestNGAnnotation.Annotation_4"/>
+    </classes>
+    </test>
+</suite>
