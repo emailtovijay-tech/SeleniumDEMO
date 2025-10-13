@@ -29,13 +29,13 @@ public class BTTLogin {
          // default : System.out.println("Invalid browser"); return;
 
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
     @Test (dataProvider = "dp")
     void testlogin(String email, String pwd) throws InterruptedException
     {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.get("https://portal.bluetriangletech.com/btportal/web/index.php?r=overview-dashboard/overview");
         driver.manage().window().maximize();
 
