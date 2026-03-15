@@ -15,6 +15,7 @@ import java.util.Locale;
 public class BTTLogin {
     WebDriver driver;
     WebElement Close_btn, Usericon, Logoutoption, elementlink;
+    
 
     @BeforeClass
     @Parameters({"browser"})
